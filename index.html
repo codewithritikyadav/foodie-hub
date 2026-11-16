@@ -1,0 +1,465 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Foodie's Hub | Taste The Happiness</title>
+
+    <!-- Favicon -->
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='22' fill='%23ff7a18'/%3E%3Ctext x='50' y='70' font-size='62' text-anchor='middle'%3E%F0%9F%8D%94%3C/text%3E%3C/svg%3E">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- NAVIGATION -->
+<header class="site-header">
+    <nav class="navbar container">
+
+        <a class="logo" href="#home">Foodie's <span>Hub.</span></a>
+
+        <button class="menu-toggle" id="menuToggle"
+            aria-label="Open navigation" aria-expanded="false">
+            <span></span><span></span><span></span>
+        </button>
+
+        <ul class="nav-links" id="navLinks">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#menu">Menu</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+            <li><a href="#reservation">Reservation</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+
+        <a href="#reservation" class="button nav-button">Book a Table</a>
+    </nav>
+</header>
+
+<main>
+
+<!-- HOME SECTION -->
+<section class="hero" id="home">
+    <div class="hero-inner container">
+
+        <div class="hero-content">
+            <p class="eyebrow">WELCOME TO FOODIE'S HUB</p>
+
+            <h1>
+                Delicious Food,<br>
+                <span>Wonderful Moments.</span>
+            </h1>
+
+            <p class="hero-copy">
+                Experience the perfect blend of taste, freshness
+                and happiness with every bite.
+            </p>
+
+            <div class="hero-actions">
+                <a href="#menu" class="button">Explore Menu</a>
+                <a href="#about" class="text-link">
+                    Discover our story →
+                </a>
+            </div>
+
+            <div class="hero-note">
+                <span>✦</span> Fresh ingredients · Made with love
+            </div>
+        </div>
+
+        <div class="hero-visual">
+            <img src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=1100&auto=format&fit=crop&q=85"
+                 alt="Fresh restaurant meal">
+
+            <div class="hero-sticker">
+                <strong>100%</strong>
+                <span>Fresh<br>and tasty</span>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<!-- ABOUT SECTION -->
+<section class="section about-section" id="about">
+    <div class="container about-grid">
+
+        <div class="about-photo">
+            <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=1000&auto=format&fit=crop&q=85"
+                 alt="Restaurant interior">
+
+            <div class="photo-caption">
+                <strong>Good food.</strong><br>
+                Great company.
+            </div>
+        </div>
+
+        <div class="about-content">
+            <p class="eyebrow">OUR STORY</p>
+
+            <h2>We Serve Food <span>With Love</span></h2>
+
+            <p>
+                Foodie's Hub is a place where delicious flavours
+                meet wonderful experiences. We believe in serving
+                fresh, quality food made with passion and care.
+            </p>
+
+            <p>
+                From delicious starters to mouth-watering desserts,
+                every dish is prepared to make your day special.
+            </p>
+
+            <a href="#menu" class="button">Discover Our Menu</a>
+
+            <div class="about-points">
+                <div>
+                    <strong>Fresh</strong>
+                    <span>Quality ingredients</span>
+                </div>
+
+                <div>
+                    <strong>Made with care</strong>
+                    <span>Food full of flavour</span>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<!-- MENU SECTION -->
+<section class="section menu-section" id="menu">
+    <div class="container">
+
+        <div class="section-heading">
+            <p class="eyebrow">OUR SPECIAL MENU</p>
+            <h2>Explore Our <span>Delicious Food</span></h2>
+            <p>Something delicious for every craving.</p>
+        </div>
+
+        <!-- Menu Filters -->
+        <div class="filter-buttons">
+            <button class="filter-button active" data-filter="all">All</button>
+            <button class="filter-button" data-filter="pizza">Pizza</button>
+            <button class="filter-button" data-filter="burger">Burgers</button>
+            <button class="filter-button" data-filter="main">Main Course</button>
+            <button class="filter-button" data-filter="dessert">Desserts</button>
+        </div>
+
+        <div class="menu-grid">
+
+            <article class="food-card" data-category="burger">
+                <img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=700&auto=format&fit=crop&q=85"
+                     alt="Classic burger">
+                <div class="food-info">
+                    <div class="food-title">
+                        <h3>Classic Burger</h3>
+                        <strong>₹199</strong>
+                    </div>
+                    <p>Juicy burger with cheese and fresh vegetables.</p>
+                    <span class="food-tag">Bestseller</span>
+                </div>
+            </article>
+
+            <article class="food-card" data-category="pizza">
+                <img src="https://images.unsplash.com/photo-1513104890138-7c749659a591?w=700&auto=format&fit=crop&q=85"
+                     alt="Cheese pizza">
+                <div class="food-info">
+                    <div class="food-title">
+                        <h3>Cheese Pizza</h3>
+                        <strong>₹299</strong>
+                    </div>
+                    <p>Freshly baked pizza loaded with cheese.</p>
+                    <span class="food-tag">Popular</span>
+                </div>
+            </article>
+
+            <article class="food-card" data-category="main">
+                <img src="https://images.unsplash.com/photo-1547592180-85f173990554?w=700&auto=format&fit=crop&q=85"
+                     alt="Fresh special bowl">
+                <div class="food-info">
+                    <div class="food-title">
+                        <h3>Fresh Special Bowl</h3>
+                        <strong>₹249</strong>
+                    </div>
+                    <p>A colourful bowl with fresh seasonal ingredients.</p>
+                    <span class="food-tag">Fresh Pick</span>
+                </div>
+            </article>
+
+            <article class="food-card" data-category="main">
+                <img src="https://images.unsplash.com/photo-1569718212165-3a8278d5f624?w=700&auto=format&fit=crop&q=85"
+                     alt="Special noodles">
+                <div class="food-info">
+                    <div class="food-title">
+                        <h3>Special Noodles</h3>
+                        <strong>₹179</strong>
+                    </div>
+                    <p>Hot and flavourful noodles with vegetables.</p>
+                    <span class="food-tag">Chef's Pick</span>
+                </div>
+            </article>
+
+            <article class="food-card" data-category="dessert">
+                <img src="https://images.unsplash.com/photo-1563805042-7684c019e1cb?w=700&auto=format&fit=crop&q=85"
+                     alt="Ice cream dessert">
+                <div class="food-info">
+                    <div class="food-title">
+                        <h3>Ice Cream Delight</h3>
+                        <strong>₹129</strong>
+                    </div>
+                    <p>A cool and creamy treat to finish your meal.</p>
+                    <span class="food-tag">Sweet Treat</span>
+                </div>
+            </article>
+
+            <article class="food-card" data-category="pizza">
+                <img src="https://images.unsplash.com/photo-1574071318508-1cdbab80d002?w=700&auto=format&fit=crop&q=85"
+                     alt="Garden pizza">
+                <div class="food-info">
+                    <div class="food-title">
+                        <h3>Garden Pizza</h3>
+                        <strong>₹279</strong>
+                    </div>
+                    <p>A delicious mix of vegetables and herbs.</p>
+                    <span class="food-tag">Vegetarian</span>
+                </div>
+            </article>
+
+        </div>
+    </div>
+</section>
+
+<!-- GALLERY SECTION -->
+<section class="section gallery-section" id="gallery">
+    <div class="container">
+
+        <div class="section-heading">
+            <p class="eyebrow">FOOD GALLERY</p>
+            <h2>A Feast For <span>Your Eyes</span></h2>
+            <p>A little look at the flavours waiting for you.</p>
+        </div>
+
+        <div class="gallery-grid">
+            <img src="https://images.unsplash.com/photo-1513104890138-7c749659a591?w=800&auto=format&fit=crop&q=85"
+                 alt="Pizza">
+
+            <img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=800&auto=format&fit=crop&q=85"
+                 alt="Burger">
+
+            <img src="https://images.unsplash.com/photo-1555939594-58d7cb561ad1?w=800&auto=format&fit=crop&q=85"
+                 alt="Grilled food">
+
+            <img src="https://images.unsplash.com/photo-1547592180-85f173990554?w=800&auto=format&fit=crop&q=85"
+                 alt="Fresh salad">
+        </div>
+
+    </div>
+</section>
+
+<!-- RESERVATION SECTION -->
+<section class="section reservation-section" id="reservation">
+    <div class="container reservation-grid">
+
+        <div class="reservation-copy">
+            <p class="eyebrow">BOOK YOUR TABLE</p>
+
+            <h2>Make Your Next<br><span>Meal Special.</span></h2>
+
+            <p>
+                Planning a meal with friends or family?
+                Send us a reservation request using the form.
+            </p>
+
+            <div class="reservation-detail">
+                <span>🕒</span>
+                <div>
+                    <strong>Opening Hours</strong>
+                    <p>Every day · 10 AM – 11 PM</p>
+                </div>
+            </div>
+
+            <div class="reservation-detail">
+                <span>📍</span>
+                <div>
+                    <strong>Visit Us</strong>
+                    <p>Lucknow, Uttar Pradesh, India</p>
+                </div>
+            </div>
+        </div>
+
+        <form class="booking-form" id="bookingForm">
+            <h3>Reserve a Table</h3>
+            <p class="form-intro">Fill in your details and preferred date.</p>
+
+            <div class="form-row">
+                <label for="name">Your Name</label>
+                <input type="text" id="name" name="name"
+                       placeholder="Enter your name" required>
+            </div>
+
+            <div class="form-row">
+                <label for="email">Email Address</label>
+                <input type="email" id="email" name="email"
+                       placeholder="you@example.com" required>
+            </div>
+
+            <div class="form-row two-columns">
+                <div>
+                    <label for="phone">Phone Number</label>
+                    <input type="tel" id="phone" name="phone"
+                           placeholder="Your phone number"
+                           pattern="[0-9+\-\s]{10,15}" required>
+                </div>
+
+                <div>
+                    <label for="guests">Guests</label>
+                    <select id="guests" name="guests" required>
+                        <option value="">Select</option>
+                        <option>1 Person</option>
+                        <option>2 Persons</option>
+                        <option>3 Persons</option>
+                        <option>4 Persons</option>
+                        <option>5+ Persons</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="form-row">
+                <label for="date">Reservation Date</label>
+                <input type="date" id="date" name="date" required>
+            </div>
+
+            <div class="form-row">
+                <label for="message">Special Request (Optional)</label>
+                <textarea id="message" name="message" rows="3"
+                          placeholder="Any special requests?"></textarea>
+            </div>
+
+            <button type="submit" class="button form-button">
+                Send Reservation Request
+            </button>
+
+            <p class="form-note">
+                Demo form. No booking is sent to a real restaurant.
+            </p>
+
+            <p class="form-status" id="formStatus" role="status"></p>
+        </form>
+
+    </div>
+</section>
+
+<!-- CONTACT SECTION -->
+<section class="section contact-section" id="contact">
+    <div class="container">
+
+        <div class="section-heading">
+            <p class="eyebrow">GET IN TOUCH</p>
+            <h2>Let's Connect <span>With Us</span></h2>
+            <p>Have a question or planning a visit? We'd love to hear from you.</p>
+        </div>
+
+        <div class="contact-grid">
+
+            <article class="contact-card">
+                <div class="contact-icon">📍</div>
+                <h3>Our Location</h3>
+                <p>Lucknow, Uttar Pradesh, India</p>
+            </article>
+
+            <article class="contact-card">
+                <div class="contact-icon">✉️</div>
+                <h3>Email Address</h3>
+                <p>foodieshub@example.com</p>
+            </article>
+
+            <article class="contact-card">
+                <div class="contact-icon">📞</div>
+                <h3>Phone Number</h3>
+                <p>+91 98765 43210</p>
+            </article>
+
+            <article class="contact-card">
+                <div class="contact-icon">🕒</div>
+                <h3>Opening Hours</h3>
+                <p>Every day: 10 AM – 11 PM</p>
+            </article>
+
+        </div>
+
+        <!-- GOOGLE MAP -->
+        <div class="map-section">
+            <div class="map-heading">
+                <p class="eyebrow">FIND US HERE</p>
+                <h2>Visit Our Restaurant</h2>
+            </div>
+
+            <div class="map-container">
+                <iframe
+                    title="Map showing Lucknow, Uttar Pradesh"
+                    src="https://maps.google.com/maps?q=Lucknow%20Uttar%20Pradesh&t=&z=13&ie=UTF8&iwloc=&output=embed"
+                    loading="lazy"
+                    allowfullscreen>
+                </iframe>
+            </div>
+        </div>
+
+        <div class="contact-cta">
+            <h3>Ready For A Delicious Experience?</h3>
+            <p>Book your table and make your next meal memorable.</p>
+            <a href="#reservation" class="button">Reserve Your Table</a>
+        </div>
+
+    </div>
+</section>
+
+</main>
+
+<!-- FOOTER -->
+<footer class="footer">
+    <div class="container">
+
+        <a class="footer-logo" href="#home">
+            Foodie's <span>Hub.</span>
+        </a>
+
+        <p class="footer-tagline">
+            Good Food. Good Mood. Great Memories.
+        </p>
+
+        <div class="footer-links">
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#menu">Menu</a>
+            <a href="#gallery">Gallery</a>
+            <a href="#contact">Contact</a>
+        </div>
+
+        <div class="social-links">
+            <a href="https://www.instagram.com/" target="_blank">Instagram</a>
+            <a href="https://www.facebook.com/" target="_blank">Facebook</a>
+            <a href="https://www.youtube.com/" target="_blank">YouTube</a>
+        </div>
+
+        <div class="footer-line"></div>
+
+        <p class="copyright">
+            © 2026 Foodie's Hub. All Rights Reserved.
+        </p>
+
+    </div>
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
